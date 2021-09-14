@@ -13,8 +13,22 @@ public class Exercise22 {
         int first_n = input.nextInt();
         System.out.print("Enter the second number: ");
         int second_n = input.nextInt();
+        if (first_n == second_n)
+        {
+            System.exit(0);
+        }
+
         System.out.print("Enter the third number: ");
         int third_n = input.nextInt();
+
+        if (first_n == third_n)
+        {
+            System.exit(0);
+        }
+        if (second_n == third_n)
+        {
+            System.exit(0);
+        }
 
         if (first_n > second_n && first_n > third_n)
         {
